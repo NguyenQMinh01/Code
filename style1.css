@@ -1,0 +1,65 @@
+#M {
+    margin: 20px;
+    height: 50%;
+}
+
+#M ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#M ul li{
+    float:none;
+    position: relative;
+    width: 150px;
+}
+
+#M ul li a{
+    background-color: #000000;
+    line-height: 50px;
+    text-transform:capitalize;
+    border-bottom: 3px solid #fff;
+    color: #FFF;
+    padding:0 20px;
+    margin: 2px 0;
+    text-decoration: none;
+    display: block;
+}
+
+#M ul li a:hover{
+    background-color: #454545;
+}
+
+#M ul ul{
+    position:absolute; top:0px; left:150px;
+}
+
+#M ul ul li{
+       width: 150px;
+}
+
+#M ul ul li a{
+    line-height: 50px;
+    padding:0 20px;
+    margin: 2px 0;
+    text-decoration: none;
+    text-transform:capitalize;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    background-color:#808080;
+    min-width: 150px;
+}
+#M ul ul ul{
+    position: absolute;
+	top: 0; left: 190px;
+}
+
+#M ul ul , #M ul ul ul{
+    visibility: hidden;
+}
+
+#M ul li:hover>ul{
+    visibility: visible;
+}
+
